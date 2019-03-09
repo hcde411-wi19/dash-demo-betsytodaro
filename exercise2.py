@@ -42,8 +42,8 @@ app.layout = html.Div(children=[
                 'title': 'Cereal Data',
                 # It is always a good practice to have axis labels.
                 # This is especially important in this case as the numbers are not trivial
-                'xaxis': {'title': 'Sugars'},
-                'yaxis': {'title': 'Carbs'},
+                'xaxis': {'title': 'Sugars (g)'},
+                'yaxis': {'title': 'Carbs (g)'},
             }
         }
     )
