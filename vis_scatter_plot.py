@@ -28,10 +28,10 @@ app.layout = html.Div(children=[
                 # This is how we define a scatter plot. Note that it also uses "go.Scatter",
                 # but with the mode to be only "markers"
                 go.Scatter(
-                    x=df['HP'],
-                    y=df['Weight'],
+                    x=df['name'],
+                    y=df['calories'],
                     mode='markers',
-                    text=df['Vehicle Name'],  # This line sets the vehicle name as the points' labels.
+                    text=df['Cereal'],  # This line sets the vehicle name as the points' labels.
                     marker={
                         'size': 10,
                         'opacity': 0.8  # By making the points a bit transparent, it can alleviate the occlusion issue
@@ -39,11 +39,11 @@ app.layout = html.Div(children=[
                 )
             ],
             'layout': {
-                'title': 'Car Dataset 2004',
+                'title': 'Cereal and Their Calories',
                 # It is always a good practice to have axis labels.
                 # This is especially important in this case as the numbers are not trivial
-                'xaxis': {'title': 'Horse Power'},
-                'yaxis': {'title': 'Weight'},
+                'xaxis': {'title': 'Cereals'},
+                'yaxis': {'title': 'Calories'},
             }
         }
     )
